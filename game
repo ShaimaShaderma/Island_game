@@ -1,0 +1,29 @@
+#welcom message 
+print("Welcome to my island! \n")
+#doors color 
+doors = input("""There are tow doors in front of you . 🚪 a red door and 🚪 a blue door . 
+Which one do you choose? \n""")
+#red door 
+if doors.lower() == "red":
+  print("Great! now you entered a room . \n")
+  box = input("""There are three boxes : 🎁 whight box , 🎁 black, 🎁green.\n
+Which one do you choose? \n""")
+  #whight box 
+  if box.lower() == "whight":
+    print("Oops! You opend a box filled with snakes 🐍🐍🐍 . \n")
+    box = input("""There are three boxes : 🎁 whight box , 🎁 black, 🎁green.\n
+    Which one do you choose? \n""")
+  #black box
+  elif box.lower() == "black":
+    print("Oops! You opend a box filled with spiders 🕷️🕷️🕷️. \n")
+    box = input("""There are three boxes : 🎁 whight box , 🎁 black, 🎁green.\n
+Which one do you choose? \n""")
+  #green box
+  elif box.lower() == "green":
+    print("Congrates! You found the treasure!! 💰💰💰 . \n")
+  else:
+    print("Invalid choice ! 🤷‍♂️ \n")
+elif doors.lower() == "blue":
+  print("Oops! you chose the crocodile door. \ngame over 🐊🐊🐊 !")          
+else:
+    print("Invalid choice ! 🤷‍♂️")  
